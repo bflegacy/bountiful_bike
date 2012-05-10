@@ -34036,3 +34036,34 @@ Served asset /locomotive/nocoffee.png - 304 Not Modified (0ms)
 
 Started GET "/assets/locomotive/icons/membership_lock.png" for 127.0.0.1 at 2012-05-10 11:20:34 -0400
 Served asset /locomotive/icons/membership_lock.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-10 11:59:14 -0400
+Processing by Locomotive::Public::PagesController#show as HTML
+[LocomotiveCMS] [fetch site] host = 0.0.0.0 / 0.0.0.0:8080
+MONGODB locomotive_dev['locomotive_sites'].find({}).limit(-1).sort([[:_id, :asc]])
+MONGODB locomotive_dev['locomotive_accounts'].find({:_id=>BSON::ObjectId('4fabbe542f9d3f7e53000002')}).limit(-1).sort([[:_id, :asc]])
+MONGODB locomotive_dev['locomotive_pages'].find({"site_id"=>BSON::ObjectId('4fabbe712f9d3f7e53000004'), :depth=>0, "fullpath.en"=>{"$in"=>["index"]}}).sort([[:position, :asc]])
+MONGODB locomotive_dev['locomotive_pages'].find({"parent_id"=>BSON::ObjectId('4fabbe712f9d3f7e53000006')}, {:_type=>1, "title"=>1, "slug"=>1, "fullpath"=>1, "position"=>1, "depth"=>1, "published"=>1, "templatized"=>1, "redirect"=>1, "listed"=>1, "response_type"=>1, "parent_id"=>1, "parent_ids"=>1, "site_id"=>1, "created_at"=>1, "updated_at"=>1}).sort([[:position, :asc]])
+  Rendered text template (0.0ms)
+Completed 200 OK in 7ms (Views: 0.4ms)
+
+
+Started GET "/assets/locomotive/icons/start.png" for 127.0.0.1 at 2012-05-10 11:59:15 -0400
+Served asset /locomotive/icons/start.png - 304 Not Modified (0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2012-05-10 11:59:17 -0400
+Processing by Locomotive::Public::PagesController#show as HTML
+  Parameters: {"path"=>"products"}
+[LocomotiveCMS] [fetch site] host = 0.0.0.0 / 0.0.0.0:8080
+MONGODB locomotive_dev['locomotive_sites'].find({}).limit(-1).sort([[:_id, :asc]])
+MONGODB locomotive_dev['locomotive_accounts'].find({:_id=>BSON::ObjectId('4fabbe542f9d3f7e53000002')}).limit(-1).sort([[:_id, :asc]])
+MONGODB locomotive_dev['locomotive_pages'].find({"site_id"=>BSON::ObjectId('4fabbe712f9d3f7e53000004'), :depth=>1, "fullpath.en"=>{"$in"=>["products", "content_type_template"]}}).sort([[:position, :asc]])
+MONGODB locomotive_dev['locomotive_pages'].find({"parent_id"=>BSON::ObjectId('4fabcfa82f9d3f7e530000a7')}, {:_type=>1, "title"=>1, "slug"=>1, "fullpath"=>1, "position"=>1, "depth"=>1, "published"=>1, "templatized"=>1, "redirect"=>1, "listed"=>1, "response_type"=>1, "parent_id"=>1, "parent_ids"=>1, "site_id"=>1, "created_at"=>1, "updated_at"=>1}).sort([[:position, :asc]])
+  Rendered text template (0.0ms)
+Completed 200 OK in 7ms (Views: 0.3ms)
+
+
+Started GET "/assets/locomotive/icons/start.png" for 127.0.0.1 at 2012-05-10 11:59:17 -0400
+Served asset /locomotive/icons/start.png - 304 Not Modified (0ms)
